@@ -29,15 +29,19 @@ class MyApp extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              ElevatedButton(
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Campus Recruitment 2026'),
-                    ),
+              Builder(
+                builder: (context) {
+                  return ElevatedButton(
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Campus Recruitment 2026'),
+                        ),
+                      );
+                    },
+                    child: const Text('View Placement Details'),
                   );
                 },
-                child: const Text('View Placement Details'),
               ),
 
               const SizedBox(height: 20),
@@ -67,9 +71,12 @@ class MyApp extends StatelessWidget {
 // flutter create exp12
 // cd exp12
 // code .
-// Open lib/main.dart and paste this code
+
+// Open lib/main.dart and paste this code.
+
 // flutter pub get
 // flutter run -d chrome
 
 // TO BUILD WEB APP:
+
 // flutter build web
