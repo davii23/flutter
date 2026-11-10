@@ -1,0 +1,6 @@
+flutter create project
+(paste required files)
+cd project
+(incase of file changes and building again add "flutter clean" here)
+flutter pub get
+flutter run -d chrome

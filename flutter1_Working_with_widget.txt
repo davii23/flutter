@@ -1,0 +1,78 @@
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Student Profile'),
+          backgroundColor: Colors.blue,
+        ),
+
+        body: Column(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(20),
+              margin: const EdgeInsets.all(10),
+              child: const Text(
+                'Student Profile',
+                style: TextStyle(fontSize: 22),
+              ),
+            ),
+
+            const Text('Raj'),
+            const Text('Computer Science and Engineering'),
+            const Text('Flutter Laboratory'),
+
+            Row(
+              mainAxisAlignment:
+                  MainAxisAlignment.spaceEvenly,
+              children: const [
+                Icon(Icons.home),
+                Icon(Icons.person),
+                Icon(Icons.settings),
+              ],
+            ),
+
+            Card(
+              child: ListTile(
+                leading: const Icon(Icons.book),
+                title: const Text('Flutter'),
+                subtitle: const Text(
+                    'Mobile Application Development'),
+              ),
+            ),
+
+            Expanded(
+              child: ListView(
+                children: const [
+                  ListTile(
+                    leading: Icon(Icons.book),
+                    title: Text('Flutter'),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.cloud),
+                    title: Text('Cloud Computing'),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.code),
+                    title: Text('Programming'),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

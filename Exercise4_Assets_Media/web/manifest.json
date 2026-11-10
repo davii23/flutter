@@ -1,0 +1,9 @@
+{
+  "name": "Exercise4 Assets Media",
+  "short_name": "Exercise4 Assets Media",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0175C2",
+  "description": "Flutter laboratory exercise"
+}

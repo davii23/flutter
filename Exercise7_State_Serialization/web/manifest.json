@@ -1,0 +1,9 @@
+{
+  "name": "Exercise7 State Serialization",
+  "short_name": "Exercise7 State Serialization",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0175C2",
+  "description": "Flutter laboratory exercise"
+}
