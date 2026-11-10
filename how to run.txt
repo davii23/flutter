@@ -1,6 +1,20 @@
-flutter create project
-(paste required files)
-cd project
-(incase of file changes and building again add "flutter clean" here)
-flutter pub get
-flutter run -d chrome
+# Steps to Run
+
+1. Create project:
+   `flutter create exp1`
+
+2. Navigate to project:
+   `cd exp1`
+
+3. Open in VS Code:
+   `code .`
+
+4. Open `lib/main.dart` and paste the code.
+
+5. Save the file (`Ctrl + S`).
+
+6. Get dependencies:
+   `flutter pub get`
+
+7. Run in Chrome:
+   `flutter run -d chrome`
