@@ -1,0 +1,75 @@
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Placement Cell Portal'),
+          backgroundColor: Colors.blue,
+        ),
+
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Welcome to College Placement Cell',
+                style: TextStyle(fontSize: 22),
+              ),
+
+              const SizedBox(height: 20),
+
+              ElevatedButton(
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Campus Recruitment 2026'),
+                    ),
+                  );
+                },
+                child: const Text('View Placement Details'),
+              ),
+
+              const SizedBox(height: 20),
+
+              LayoutBuilder(
+                builder: (context, constraints) {
+                  if (constraints.maxWidth < 600) {
+                    return const Text('Mobile Web Layout');
+                  } else {
+                    return const Text('Desktop Web Layout');
+                  }
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+// HOW TO RUN:
+
+// flutter create exp12
+// cd exp12
+// code .
+// Open lib/main.dart and paste this code
+// flutter pub get
+// flutter run -d chrome
+
+// TO BUILD WEB APP:
+// flutter build web
